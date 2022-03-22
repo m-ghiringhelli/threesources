@@ -20,6 +20,11 @@ export default function Header() {
             SOVIET LEADERS
           </NavLink>
         </li>
+        <li>
+          <NavLink className='link' to='/tudors'>
+            TUDOR MONARCHS
+          </NavLink>
+        </li>
       </ul>
     </div>
   );
