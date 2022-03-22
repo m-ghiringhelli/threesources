@@ -1,10 +1,11 @@
 import React from 'react';
+import './Portrait.css';
 
 export default function Portrait({ person }) {
   return (
-    <div>
+    <div className='portrait'>
       <img src={`./images/${(person.name).split(' ').join('-').toLowerCase()}.jpg`} />
-      <p>{person.name}</p>
+      <span>{(person.name).toUpperCase()}</span>
     </div>
   );
 }

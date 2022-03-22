@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { fetchSoviets } from '../../services/soviets';
+import Portrait from '../../components/Portrait/Portrait';
 
 export default function Soviets() {
   const [leaders, setLeaders] = useState([]);
@@ -22,7 +23,7 @@ export default function Soviets() {
       <p>{errorMessage}</p>
       <div>
         {leaders.map((leader) => (
-          <p key={leader.id}>{leader.name}</p>
+          <Portrait key={leader.id} person={leader} />
         ))}
       </div>
     </>

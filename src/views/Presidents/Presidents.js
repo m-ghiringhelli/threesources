@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { fetchPresidents } from '../../services/presidents';
+import Portrait from '../../components/Portrait/Portrait';
 
 export default function Presidents() {
   const [presidents, setPresidents] = useState([]);
@@ -22,7 +23,7 @@ export default function Presidents() {
       <p>{errorMessage}</p>
       <div>
         {presidents.map((president) => (
-          <p key={president.name}>{president.name}</p> 
+          <Portrait key={president.id} person={president} /> 
         ))} 
       </div>
     </>
