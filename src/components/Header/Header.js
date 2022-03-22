@@ -15,6 +15,11 @@ export default function Header() {
             RECONSTRUCTION PRESIDENTS
           </NavLink>
         </li>
+        <li>
+          <NavLink className='link' to='/soviets'>
+            SOVIET LEADERS
+          </NavLink>
+        </li>
       </ul>
     </div>
   );

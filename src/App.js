@@ -1,6 +1,7 @@
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import Main from './views/Main/Main';
 import Presidents from './views/Presidents/Presidents';
+import Soviets from './views/Soviets/Soviets';
 import Header from './components/Header/Header';
 import './App.css';
 
@@ -15,6 +16,9 @@ function App() {
           </Route>
           <Route path='/presidents'>
             <Presidents />
+          </Route>
+          <Route path='/soviets'>
+            <Soviets />
           </Route>
         </Switch>
       </div>
