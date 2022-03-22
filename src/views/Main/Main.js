@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { fetchPresidents } from '../services/presidents';
+import { fetchPresidents } from '../../services/presidents';
 
 export default function Main() {
   const [presidents, setPresidents] = useState([]);
