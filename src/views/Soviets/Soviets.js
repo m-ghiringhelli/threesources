@@ -16,10 +16,15 @@ export default function Soviets() {
     };
     fetchData();
   }, []);
-  
+
   return (
-    <div>
-      
-    </div>
+    <>
+      <p>{errorMessage}</p>
+      <div>
+        {leaders.map((leader) => (
+          <p key={leader.id}>{leader.name}</p>
+        ))}
+      </div>
+    </>
   );
 }
