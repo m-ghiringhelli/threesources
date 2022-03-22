@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { fetchTudors } from '../../services/tudors';
+import Portrait from '../../components/Portrait/Portrait';
 
 export default function Tudors() {
   const [monarchs, setMonarchs] = useState([]);
@@ -22,7 +23,7 @@ export default function Tudors() {
       <p>{errorMessage}</p>
       <div>
         {monarchs.map((monarch) => (
-          <p key={monarch.id}>{monarch.name}</p>
+          <Portrait key={monarch.id} person={monarch} />
         ))}
       </div>
     </>
