@@ -1,6 +1,8 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
+import classes from './Header.css';
 
 export default function Header() {
   return (
@@ -11,22 +13,22 @@ export default function Header() {
       </div>
       <ul className='navbar'>
         <li>
-          <NavLink className='link' exact to='/'>
+          <NavLink activeStyle={{ color: 'white', textShadow: '0 5px 25px white' }} className='link' exact to='/'>
             HOME
           </NavLink>
         </li>
         <li>
-          <NavLink className='link' to='/presidents'>
+          <NavLink activeStyle={{ color: 'white', textShadow: '0 5px 25px white' }} className='link' to='/presidents'>
             RECONSTRUCTION PRESIDENTS
           </NavLink>
         </li>
         <li>
-          <NavLink className='link' to='/soviets'>
+          <NavLink activeStyle={{ color: 'white', textShadow: '0 5px 25px white' }} className='link' to='/soviets'>
             SOVIET LEADERS
           </NavLink>
         </li>
         <li>
-          <NavLink className='link' to='/tudors'>
+          <NavLink activeStyle={{ color: 'white', textShadow: '0 5px 25px white' }} className='link' to='/tudors'>
             TUDOR MONARCHS
           </NavLink>
         </li>
