@@ -1,0 +1,19 @@
+.portrait {
+    cursor: pointer;
+}
+
+.portrait img {
+    width: 500px;
+}
+
+.portrait span {
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+    display: block;
+    position: relative;
+    bottom: 80px;
+    background-color: rgba(19, 19, 19, 0.4);
+    width: 400px;
+    margin: auto;
+}

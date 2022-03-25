@@ -1,0 +1,53 @@
+.header {
+    display: flex;
+    background-color: black;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerText h1 {
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.headerText h3 {
+    color: white;
+    font-family: 'Merriweather';
+    font-weight: 300;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+.navbar li {
+    margin: 0px 5px;
+    padding: 5px 20px;
+    height: 90px;
+}
+
+.navbar li:hover {
+    background-color: rgb(32, 32, 32);
+}
+
+.navbar li:hover a {
+    color: white;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: rgb(189, 189, 189);
+    font-size: 1.5rem;
+    position: relative;
+    top: 33px;
+}
+
+.navbar li a:hover {
+    border-bottom: 5px solid red;
+}
